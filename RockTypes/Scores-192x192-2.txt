@@ -1,0 +1,83 @@
+[INFO] loading images...
+[INFO] processed 500/665
+[INFO] features matrix: 71.8MB
+
+Data size: 0.63 Test size: 0.12 Validation size: 0.25
+
+[INFO] evaluating k-NN classifier for k-value  3  using  Manhattan method
+              precision    recall  f1-score   support
+
+           4       0.33      0.10      0.15        10
+          67       0.83      0.45      0.59        44
+           B       0.45      0.92      0.61        26
+
+    accuracy                           0.56        80
+   macro avg       0.54      0.49      0.45        80
+weighted avg       0.65      0.56      0.54        80
+
+
+
+[INFO] evaluating k-NN classifier for k-value  5  using  Manhattan method   
+              precision    recall  f1-score   support
+
+           4       1.00      0.20      0.33        10
+          67       0.90      0.43      0.58        44
+           B       0.44      0.96      0.60        26
+
+    accuracy                           0.57        80
+   macro avg       0.78      0.53      0.51        80
+weighted avg       0.77      0.57      0.56        80
+
+
+
+[INFO] evaluating k-NN classifier for k-value  7  using  Manhattan method   
+              precision    recall  f1-score   support
+
+           4       1.00      0.20      0.33        10
+          67       0.83      0.34      0.48        44
+           B       0.42      0.96      0.58        26
+
+    accuracy                           0.53        80
+   macro avg       0.75      0.50      0.47        80
+weighted avg       0.72      0.53      0.50        80
+
+
+
+[INFO] evaluating k-NN classifier for k-value  3  using  Euclidian method   
+              precision    recall  f1-score   support
+
+           4       0.50      0.20      0.29        10
+          67       0.84      0.36      0.51        44
+           B       0.42      0.92      0.58        26
+
+    accuracy                           0.53        80
+   macro avg       0.59      0.50      0.46        80
+weighted avg       0.66      0.53      0.50        80
+
+
+
+[INFO] evaluating k-NN classifier for k-value  5  using  Euclidian method   
+              precision    recall  f1-score   support
+
+           4       1.00      0.10      0.18        10
+          67       0.75      0.20      0.32        44
+           B       0.37      0.96      0.54        26
+
+    accuracy                           0.44        80
+   macro avg       0.71      0.42      0.35        80
+weighted avg       0.66      0.44      0.37        80
+
+
+
+[INFO] evaluating k-NN classifier for k-value  7  using  Euclidian method   
+C:\Utilities\Python\Python37-32\lib\site-packages\sklearn\metrics\_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           4       0.00      0.00      0.00        10
+          67       0.67      0.14      0.23        44
+           B       0.35      0.96      0.52        26
+
+    accuracy                           0.39        80
+   macro avg       0.34      0.37      0.25        80
+weighted avg       0.48      0.39      0.29        80

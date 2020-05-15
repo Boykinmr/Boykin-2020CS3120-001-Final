@@ -1,0 +1,85 @@
+[INFO] loading images...
+[INFO] processed 500/665
+[INFO] features matrix: 31.9MB
+
+Data size: 0.70 Test size: 0.15 Validation size: 0.15
+
+[INFO] evaluating k-NN classifier for k-value  3  using  Manhattan method
+              precision    recall  f1-score   support
+
+           4       0.67      0.29      0.40        14
+          67       0.91      0.38      0.53        53
+           B       0.44      0.97      0.61        33
+
+    accuracy                           0.56       100
+   macro avg       0.67      0.54      0.51       100
+weighted avg       0.72      0.56      0.54       100
+
+
+
+[INFO] evaluating k-NN classifier for k-value  5  using  Manhattan method
+              precision    recall  f1-score   support
+
+           4       0.00      0.00      0.00        14
+          67       0.88      0.40      0.55        53
+           B       0.43      0.97      0.59        33
+
+    accuracy                           0.53       100
+   macro avg       0.43      0.46      0.38       100
+weighted avg       0.60      0.53      0.48       100
+
+
+
+[INFO] evaluating k-NN classifier for k-value  7  using  Manhattan method
+C:\Utilities\Python\Python37-32\lib\site-packages\sklearn\metrics\_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           4       0.00      0.00      0.00        14
+          67       0.93      0.26      0.41        53
+           B       0.38      0.97      0.54        33
+
+    accuracy                           0.46       100
+   macro avg       0.44      0.41      0.32       100
+weighted avg       0.62      0.46      0.40       100
+
+
+
+[INFO] evaluating k-NN classifier for k-value  3  using  Euclidian method
+              precision    recall  f1-score   support
+
+           4       0.40      0.14      0.21        14
+          67       0.94      0.28      0.43        53
+           B       0.41      0.97      0.57        33
+
+    accuracy                           0.49       100
+   macro avg       0.58      0.47      0.41       100
+weighted avg       0.69      0.49      0.45       100
+
+
+
+[INFO] evaluating k-NN classifier for k-value  5  using  Euclidian method
+              precision    recall  f1-score   support
+
+           4       0.00      0.00      0.00        14
+          67       0.93      0.26      0.41        53
+           B       0.38      0.97      0.55        33
+
+    accuracy                           0.46       100
+   macro avg       0.44      0.41      0.32       100
+weighted avg       0.62      0.46      0.40       100
+
+
+
+[INFO] evaluating k-NN classifier for k-value  7  using  Euclidian method
+C:\Utilities\Python\Python37-32\lib\site-packages\sklearn\metrics\_classification.py:1272: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+              precision    recall  f1-score   support
+
+           4       0.00      0.00      0.00        14
+          67       0.90      0.17      0.29        53
+           B       0.36      0.97      0.52        33
+
+    accuracy                           0.41       100
+   macro avg       0.42      0.38      0.27       100
+weighted avg       0.59      0.41      0.32       100

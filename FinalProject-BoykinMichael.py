@@ -46,9 +46,19 @@ def load(imagePath_list, method, verbose=-1):
 		# return a tuple of the data and labels
 		return (np.array(data), np.array(labels))
 
-# grab the list of images that we'll be describing
+#ask the user if they wish to make a new model or use a saved one.
+print ( "Do you wish to :")
+print ( "1) record a new model and save it to the disk")
+print ( "2) Use a previously recorded model saved on disk")
+question = input("? ")
+if ( question == "1" ):
+	pickleSave = True
+else :
+	pickleSave = False
 
+# grab the list of images that we'll be describing
 print("[INFO] loading images...")
+
 
 imagePath_list = list(paths.list_images("./RockTypes"))
 # initialize the image preprocessor, load the dataset from disk,
@@ -81,7 +91,7 @@ print ("\nData size: {:.2f} Test size: {:.2f} Validation size: {:.2f}\n"
 
 (trainX, validateX, trainY, validateY) = train_test_split(data, labels,
 	test_size=valid_size_number, random_state = 42)
-pickleSave = False
+
 
 if( pickleSave == True ) :
 	# train and evaluate a k-NN classifier on the raw pixel intensities
@@ -104,4 +114,6 @@ imagePath_list = list(paths.list_images("./tests"))
 dataTest = dataTest.reshape((dataTest.shape[0], 3072))
 
 dataTestGuess = model.predict( dataTest )
-print ( le.inverse_transform(dataTestGuess))
+rockType = list(le.inverse_transform(dataTestGuess))
+for item in range(len(imagePath_list)):
+	print ("{%s}, {%s}" % (imagePath_list[item], rockType[item]))
